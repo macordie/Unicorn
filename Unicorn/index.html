@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <title>Build your Own Custom Unicorn v1.0, 1--Jan-2016</title>
+    <script type="text/javascript" src="js/formcalculations.js"></script>
+    <link href="styles/cakeform.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Create cheat codes for your custom unicorn in Minecraft!  This requires the Ultimate Unicorn Mod and will create zebras, pegasus, nightmare, destrier, rainbow, and magical breeds.  You can also add a horn, aura, fire hooves, or a fish tail.  You can also name your pony, pegasus, earth pony, or unicorn and give them a saddle.  Just cut/paste the summon cheat code to minecraft and your custom animal will magically appear!  Enjoy.">
+    <meta name="author" content="MG3">
+    <meta name="keywords" content="Minecraft Ultimate Unicorn Mod Cheat Code">
+
+    <title>Church of Christ in Traverse City</title>
+</head>
+
+<body onload='hideTotal()'>
+    <div id="wrap">
+        <form action="" id="cakeform" onsubmit="return false;">
+        <div>
+            <div class="cont_order">
+               <fieldset>
+                <legend>Make your Ultimate Unicorn, Alacorn, Earth Pony, or Horse</legend>
+                <p>
+                <label class="inlinelabel" for='includeinscription'>Unicorn Name - If you name your Unicorn Magic, he/she can have a special hide and heart wings</label></br>
+                <input type="checkbox" id="includeinscription" name="includeinscription" onclick="calculateTotal()" />
+                <input type="text"  id="theinscription" name="theinscription" value="Magic"   onkeydown="calculateTotal()"/>
+                </p>
+                <label >Hide Type</label>
+                <label class='radiolabel'><input type="radio"  name="selectedcake" value="Zebra" onclick="calculateTotal()" /> Zebra - Striped</label><br/>
+                <label class='radiolabel'><input type="radio"  name="selectedcake" value="Pegasus" onclick="calculateTotal()" /> Pegasus - White</label><br/>
+                <label class='radiolabel'><input type="radio"  name="selectedcake" value="Nightmare" onclick="calculateTotal()" /> Nightmare - Black with Red Hooves</label><br/>
+                <label class='radiolabel'><input type="radio"  name="selectedcake" value="Destrier" onclick="calculateTotal()" /> Destrier - Dark Brown</label><br/>
+                <label class='radiolabel'><input type="radio"  name="selectedcake" value="Rainbow" onclick="calculateTotal()" /> Rainbow Colored - With Rainbow Spots on Legs and Rainbow Wings</label><br/>
+                <label class='radiolabel'><input type="radio"  name="selectedcake" value="Magical" onclick="calculateTotal()" /> Magical Star Light - Dark Blue (always has wings and horn)</label><br/>
+
+                <br/>
+                <label >Pegasus Options (Large Wings, Small Wings, or No Wings to make an Earth Pony)</label>
+         
+                <select id="filling" name='filling' onchange="calculateTotal()">
+                <option value="Large Wings">Large Wings</option>
+                <option value="Small Wings">Small Wings</option>
+                <option value="None">No Wings</option>
+                </select>
+                <br/>
+                <br/>
+                <div id="wrapper">
+                        <div id="content"><B>More DNA Characteristics</B><br/><br/>
+                        <input type="checkbox" id="horn" name='horn' onclick="calculateTotal()" />
+                        <label for='includecandles' class="inlinelabel">Unicorn Horn</label>
+                        </br>
+                        <input type="checkbox" id="aura" name='aura' onclick="calculateTotal()" />
+                        <label for='includecandles' class="inlinelabel">Aura</label>
+                        </br>
+                        <input type="checkbox" id="big" name='big' onclick="calculateTotal()" />
+                        <label for='includecandles' class="inlinelabel">Destrier Body Type (Large)</label>
+                        </br> 
+                        <input type="checkbox" id="firehooves" name='firehooves' onclick="calculateTotal()" />
+                        <label for='firehooves' class="inlinelabel">Fire Hoofs</label>
+                        </br>
+                        <input type="checkbox" id="fishtail" name='fishtail' onclick="calculateTotal()" />
+                        <label for='fishtail' class="inlinelabel">Fish Tail (Hippocamp)</label>
+                        </br></br></br></br></br></br></br></br></br></br></br></br>
+                    </div>
+                    <div id="sidebar">
+                        <img id="myImage" src="img/zebra.png" width="400" height="300">
+                    </div>
+                    <div id="cleared"></div>
+                </div>
+                <p>
+                <p><B>Ready to Ride Options (Get a gentle horse ready to ride, no golen apple required.)</B></p>
+                <input type="checkbox" id="saddle" name='saddle' onclick="calculateTotal()" />
+                <label for='includecandles' class="inlinelabel">Add a Saddle</label>
+                </br>
+                <input type="checkbox" id="tame" name='tame' onclick="calculateTotal()" />
+                <label for='includecandles' class="inlinelabel">Tame the Unicorn, Horse, Pegasus or Earth Pony</label>
+                </br>
+                
+                <div id="totalPrice"></div>
+                
+                </fieldset>
+            </div>
+              	
+        </div>  
+       </form>
+    V3.0 - Created by michael@proudrooster.com<br/>
+    <a href="http://www.hackshop.com/p/download.html">Click to Get the Ultimate Unicorn Mod!</a>
+	</div><!--End of wrap-->
+
+</body>
+</html>
